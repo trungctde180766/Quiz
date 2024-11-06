@@ -1,0 +1,149 @@
+/* General Quiz Review Container */
+.quiz-review-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.quiz-review-container h1 {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    font-size: 2rem;
+}
+
+/* Question Review */
+.review-question {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-question.correct {
+    background-color: #e7f9ef;
+    border: 1px solid #a0e7b5;
+}
+
+.review-question.incorrect {
+    background-color: #fdeaea;
+    border: 1px solid #f1a3a5;
+}
+
+/* Options Styling */
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.option {
+    background-color: #e8eaff;
+    padding: 15px;
+    border: 1px solid #b0b8ff;
+    border-radius: 8px;
+    width: 48%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.option:hover {
+    background-color: #d2d8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option.selected {
+    font-weight: bold;
+    color: #333;
+    background-color: #c5cbff;
+    border: 1px solid #8a94ff;
+}
+
+/* Answer Feedback */
+.answer-feedback {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Return Button Styling */
+.return-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.return-button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+.return-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Summary Review Section */
+.summary-review-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.summary-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.summary-item {
+    background-color: #ecf9ed;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #aad6b8;
+    border-radius: 8px;
+    width: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.summary-item:hover {
+    background-color: #d3eed8;
+    transform: translateY(-3px);
+}
+
+.summary-item.not-answered {
+    background-color: #fbe2e4;
+    border: 1px solid #f1a1a3;
+}
+
+/* Status Text for Summary */
+.status {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Score Display */
+.quiz-review-container h2 {
+    margin-top: 15px;
+    color: #007bff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
